@@ -1,0 +1,168 @@
+* {
+  outline   : none;
+  box-sizing: border-box;
+
+  :focus {
+    outline: none !important;
+  }
+}
+
+html,
+body {
+  margin     : 0;
+  font-family: $ff-OpenSans;
+}
+
+:root {
+  --ns-black          : #{$ns-black};
+  --ns-primary        : #{$ns-primary};
+  --ns-primary-hover  : #{$ns-primary-hover};
+  --ns-gray           : #{$ns-gray};
+  --ns-dark-gray      : #{$ns-dark-gray};
+  --ns-icy-white      : #{$ns-icy-white};
+  --ns-separator-grey : #{$ns-separator-grey};
+  --ff-OpenSans       : #{$ff-OpenSans};
+  --ff-sans-serif     : #{$ff-sans-serif};
+}
+
+//----no select class----//
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select  : none;
+  -khtml-user-select   : none;
+  -moz-user-select     : none;
+  -ms-user-select      : none;
+  user-select          : none;
+}
+
+@mixin noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select  : none;
+  -khtml-user-select   : none;
+  -moz-user-select     : none;
+  -ms-user-select      : none;
+  user-select          : none;
+}
+
+//----center----//
+.center {
+  display   : block !important;
+  text-align: -webkit-center !important
+}
+
+.center-all {
+  display        : flex !important;
+  justify-content: center !important;
+  align-items    : center !important
+}
+
+@mixin center-all {
+  display        : flex !important;
+  justify-content: center !important;
+  align-items    : center !important
+}
+
+@mixin center {
+  display   : block !important;
+  text-align: -webkit-center !important
+}
+
+//----main page container----//
+@mixin main-ctnr-padding($screen) {
+  @if $screen==mobile {
+    padding: 0 40px;
+  }
+
+  @else if $screen==smallmobile {
+    padding: 0 20px;
+  }
+
+  @else if $screen==tablet {
+    padding: 0 80px;
+  }
+
+  @else {
+    padding: 0 135px;
+  }
+}
+
+.ns-common-main-ctnr {
+  @include main-ctnr-padding(pc);
+}
+
+@include media-below(lg) {
+  .ns-common-main-ctnr {
+    @include main-ctnr-padding(tablet);
+  }
+}
+
+@include media-below(md) {
+  .ns-common-main-ctnr {
+    @include main-ctnr-padding(mobile);
+  }
+}
+
+@include media-below(ml) {
+  .ns-common-main-ctnr {
+    @include main-ctnr-padding(smallmobile);
+  }
+}
+
+//----blink animation----//
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* IE */
+@-ms-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Opera */
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

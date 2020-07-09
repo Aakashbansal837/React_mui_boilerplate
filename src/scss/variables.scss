@@ -1,0 +1,45 @@
+$ff-OpenSans : 'Open Sans',
+sans-serif,
+color-emoji;
+$ff-sans-serif : -apple-system,
+BlinkMacSystemFont,
+"Segoe UI",
+Roboto,
+"Helvetica Neue",
+Arial,
+"Noto Sans",
+sans-serif,
+"Apple Color Emoji",
+"Segoe UI Emoji",
+"Segoe UI Symbol",
+"Noto Color Emoji";
+
+//colors
+$ns-red           : red;
+$ns-black         : #000000;
+$ns-gray          : #77869c;
+$ns-dark-gray     : #485268;
+$ns-icy-white     : #ffffff;
+$ns-separator-grey: #d2d3da;
+
+$ns-primary      : #0275d8;
+$ns-primary-hover: #3198f3;
+
+//breakpoints value
+$ns-bp-xs : 0px; //--extra small
+$ns-bp-ms : 321px; //--xs small mobile
+$ns-bp-mm : 376px; //--xs medium mobile
+$ns-bp-ml : 426px; //--xs large mobile
+$ns-bp-sm : 576px; //--small
+$ns-bp-md : 768px; //--medium
+$ns-bp-lg : 992px; //--large
+$ns-bp-xl : 1200px; //--extra large
+
+//bootstrap breakpoints
+$ns-bt-breakpoint : (
+  xs : $ns-bp-xs,
+  sm : $ns-bp-sm,
+  md : $ns-bp-md,
+  lg : $ns-bp-lg,
+  xl : $ns-bp-xl
+);
