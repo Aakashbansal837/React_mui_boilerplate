@@ -1,6 +1,5 @@
 import React from 'react';
-import { createMuiTheme } from '@material-ui/core/styles';
-import { ThemeProvider } from '@material-ui/core/styles';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 
 const primaryColor = "#0275d8";
 
@@ -84,7 +83,7 @@ const menuMap = {
   }
 }
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: primaryColor,
