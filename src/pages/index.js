@@ -1,8 +1,6 @@
 import React from 'react';
 import { connect } from "react-redux";
-import Typography from '@mui/joy/Typography';
-import {Button,Select,InputLabel,MenuItem} from '@mui/joy';
-import { FormControl } from '@mui/material';
+import {Button,FormControl,Select,MenuItem, Typography} from '@mui/material';
 class BasePage extends React.Component {
   constructor(props) {
     super(props);
