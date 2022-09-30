@@ -73,19 +73,19 @@ jobs:
       
       
     - name: Ponicode Unit Test
-    # You may pin to the exact commit or the version.
-    # uses: ponicode/unit-testing-action@197ac764140cfcbd03b49d3ad735f22b3042fa10
-    uses: ponicode/unit-testing-action@0.2.1
-    with:
-      # String: URL of the repo to be processed
-      repoUrl: 
-      # String: Ponicode UT user token from Github Secrets
-      ponicodeUtToken: 
-      # GitHub token to generate some comments into the PR
-      githubToken: 
-      # String[]: List of the files updated in the PR
-      impactedFiles: 
-      # String: branch on which the PR applies
-      branch: # default is master
-      # Comment the generated UT
-      commentUTs: 
+      # You may pin to the exact commit or the version.
+      # uses: ponicode/unit-testing-action@197ac764140cfcbd03b49d3ad735f22b3042fa10
+      uses: ponicode/unit-testing-action@0.2.1
+      with:
+        # String: URL of the repo to be processed
+        repoUrl: 
+        # String: Ponicode UT user token from Github Secrets
+        ponicodeUtToken: 
+        # GitHub token to generate some comments into the PR
+        githubToken: 
+        # String[]: List of the files updated in the PR
+        impactedFiles: 
+        # String: branch on which the PR applies
+        branch: # default is master
+        # Comment the generated UT
+        commentUTs: 
